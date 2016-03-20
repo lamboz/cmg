@@ -1,0 +1,157 @@
+@charset "utf-8";
+@import "normalize";
+@import "foundation";
+@include foundation-everything();
+
+$font-stack: 'Bitter', serif;
+$primary-font-color: #683816;
+
+html{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  color: $primary-font-color;
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+header {
+
+  .top {
+    padding: 0 50px;
+  }
+
+  #contact-methods {
+    position: absolute;
+    right: 50px;
+    top: 25px;
+  }
+
+  .intro {
+    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('http://hmanalo.ca/wp-content/uploads/2014/05/soil-hermie-1580x782.jpg') no-repeat center 80%;
+    background-size: cover;
+    color: #fff;
+    height: 460px;
+    width: 100%;
+  }
+
+  .info {
+    text-align: center;
+    position: relative;
+    top: 150px;
+  }
+
+  nav {
+    background: rgba(255,255,255,0.5);
+    height: 58px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+    }
+
+    li {
+      display: inline-block;
+      padding: 20px;
+      font-weight: 500;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.section{
+  margin-top: 38px !important;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 { text-align: center; }
+
+
+#contacts {
+  color: #fff;
+  background-color: #FAC40C;
+  font-weight: bold;
+  padding: 30px 0;
+  text-align: right;
+
+  a, a:visited {
+    color: #fff;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline;
+    margin-right: 20px;
+
+    &.social a{
+      vertical-align: sub;
+    }
+
+    a {
+      height: 24px;
+    }
+
+    &.phone a {
+      background: url('/images/phone.png') no-repeat left 50%;
+      padding-left: 32px;
+    }
+
+    &.email a {
+      background: url('/images/email.png') no-repeat left 50%;
+      padding-left: 32px;
+    }
+  }
+}
+
+#copyright{
+  background: #DC980Bforema;
+  clear: both;
+  color: #fff;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 0.75em;
+  line-height: 3em;
+  text-align: center;
+}
+
+
+
+/* Services */
+#service-boxes{
+  margin-top: 48px;
+}
+
+.service-box {
+  float: left;
+  width: 28%;
+  padding: 220px 12px 0;
+  text-align: justify;
+  margin-left: 34px;
+
+  h3 {
+    margin-top: 0;
+    text-align: center;
+  }
+}
+
+.soil-dynamics{
+  background: url("/images/service1.png") no-repeat top center;
+}

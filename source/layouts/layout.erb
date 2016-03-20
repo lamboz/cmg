@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "CMG" %></title>
+
+    <%= stylesheet_link_tag :site %>
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+    <!--Start of Zopim Live Chat Script-->
+    <script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="//v2.zopim.com/?3AmWRxGqcObfIXoQFBCSsCMBGcNuLbIa";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+    </script>
+    <!--End of Zopim Live Chat Script-->
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= partial 'header' %>
+    <section id="content" class="body container section">
+      <h2>En CMG podemos ayudarle en todos sus proyectos de Ingeniería</h2>
+      <div id="service-boxes">
+        <div class="service-box soil-dynamics">
+          <h3>Dinámica de Suelos</h3>
+          <p>
+            De los servicios que presta CMG en el ámbito de la dinámica de suelos
+            se distinguen los siguientes: Determinación de empujes laterales de
+            incremento sísmico sobre estructuras enterradas, Clasificación sísmica
+            de terrenos
+          </p>
+        </div>
+        <div class="service-box soil-dynamics">
+          <h3>Dinámica de Suelos</h3>
+          <p>
+            De los servicios que presta CMG en el ámbito de la dinámica de suelos
+            se distinguen los siguientes: Determinación de empujes laterales de
+            incremento sísmico sobre estructuras enterradas, Clasificación sísmica
+            de terrenos
+          </p>
+        </div>
+        <div class="service-box soil-dynamics">
+          <h3>Dinámica de Suelos</h3>
+          <p>
+            De los servicios que presta CMG en el ámbito de la dinámica de suelos
+            se distinguen los siguientes: Determinación de empujes laterales de
+            incremento sísmico sobre estructuras enterradas, Clasificación sísmica
+            de terrenos
+          </p>
+        </div>
+      </div>
+    </section>
+    <%= yield %>
+    <%= partial 'affiliations' %>
+    <%= partial 'contact' %>
+    <%= partial 'copyright' %>
+    <!--script type="text/javascript">
+    var $zoho= $zoho || {salesiq:{values:{},ready:function(){}}};var d=document;s=d.createElement("script");s.type="text/javascript";s.defer=true;s.src="https://salesiq.zoho.com/cmgcrc/float.ls?embedname=cmgcrc";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
+    </script-->
+    <%= javascript_include_tag :all %>
+  </body>
+</html>
