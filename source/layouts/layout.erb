@@ -1,16 +1,12 @@
+
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "CMG" %></title>
-
-    <%= stylesheet_link_tag :site %>
-    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+    <title>C.M.G. | Caracterización y Modelación Geotécnica</title>
+    <meta name="description" content="CMG Caracterización y Modelación Geotécnica S.A. es un empresa consultora especializada en geotecnia, fundada en 2016, con oficinas en San Ramón de Alajuela. CMG cuenta con personal altamente calificado y con amplia experiencia que permiten entregar soluciones específicas a los problemas particulares de nuestros clientes. Ofrecemos una amplia gama de servicios de geología aplicada, geotecnia y geofísica aplicada para atender de forma integral los problemas particulares de su proyecto.">
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://use.fontawesome.com/e0304448d3.js"></script>
     <!--Start of Zopim Live Chat Script-->
     <script type="text/javascript">
     window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -18,51 +14,70 @@
     _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
     $.src="//v2.zopim.com/?3AmWRxGqcObfIXoQFBCSsCMBGcNuLbIa";z.t=+new Date;$.
     type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+    $zopim(function() {
+      $zopim.livechat.setLanguage('es');
+    });
     </script>
     <!--End of Zopim Live Chat Script-->
-  </head>
+    <style>
+      html { width: 100%; height: 100%; min-height: 350px; }
+      body { height: 100%; width: 100%; position: relative; }
+      #wrapper {
+      	width:260px;
+      	height:65px;
+      	position:absolute;
+      	top:50%;
+      	right:50%;
+      	margin:-100px -50px;
+      	text-align:center;
+      	transition:opacity 3.5s ease;
+      	-moz-transition:opacity 3.5s ease;
+      	-webkit-transition:opacity 3.5s ease;
+      	-ms-transition:opacity 3.5s ease;
+      	-o-transition:opacity 3.5s ease;
+      }
 
-  <body class="<%= page_classes %>">
-    <%= partial 'header' %>
-    <section id="content" class="body container section">
-      <h2>En CMG podemos ayudarle en todos sus proyectos de Ingeniería</h2>
-      <div id="service-boxes">
-        <div class="service-box soil-dynamics">
-          <h3>Dinámica de Suelos</h3>
-          <p>
-            De los servicios que presta CMG en el ámbito de la dinámica de suelos
-            se distinguen los siguientes: Determinación de empujes laterales de
-            incremento sísmico sobre estructuras enterradas, Clasificación sísmica
-            de terrenos
-          </p>
-        </div>
-        <div class="service-box soil-dynamics">
-          <h3>Dinámica de Suelos</h3>
-          <p>
-            De los servicios que presta CMG en el ámbito de la dinámica de suelos
-            se distinguen los siguientes: Determinación de empujes laterales de
-            incremento sísmico sobre estructuras enterradas, Clasificación sísmica
-            de terrenos
-          </p>
-        </div>
-        <div class="service-box soil-dynamics">
-          <h3>Dinámica de Suelos</h3>
-          <p>
-            De los servicios que presta CMG en el ámbito de la dinámica de suelos
-            se distinguen los siguientes: Determinación de empujes laterales de
-            incremento sísmico sobre estructuras enterradas, Clasificación sísmica
-            de terrenos
-          </p>
-        </div>
-      </div>
-    </section>
-    <%= yield %>
-    <%= partial 'affiliations' %>
-    <%= partial 'contact' %>
-    <%= partial 'copyright' %>
-    <!--script type="text/javascript">
-    var $zoho= $zoho || {salesiq:{values:{},ready:function(){}}};var d=document;s=d.createElement("script");s.type="text/javascript";s.defer=true;s.src="https://salesiq.zoho.com/cmgcrc/float.ls?embedname=cmgcrc";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
-    </script-->
-    <%= javascript_include_tag :all %>
-  </body>
+      #wrapper:hover {
+      	opacity:1;
+      }
+
+      #logo {
+        padding-bottom:5px;
+      }
+
+      a {
+      	color:#69381B;
+      	text-decoration:none;
+      	font-size:14px;
+      	font-weight:300;
+      }
+
+      #contact {
+      	width:100%;
+      	text-align:center;
+      	position:absolute;
+      	bottom:35px;
+      	font-size:14px;
+      }
+
+      a:hover {
+        color: #f33344;
+      }
+    </style>
+  </head>
+<body>
+
+  <div id="wrapper">
+    <img src="images/cmg_logo.png" alt="C.M.G"/>
+  </div>
+
+  <div id="contact">
+  	<a href="https://www.facebook.com/cmg.sa/" target="_blank"><i class="fa fa-facebook" title="Facebook"></i></a> |
+    <a href="https://twitter.com/cmg_sa" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a> |
+    <a href="mailto:info@cmg.cr" target="_blank"><i class="fa fa-envelope" title="Email"></i></a> |
+    <a href="tel:+50640337369">+506 4033 7369</a>
+  </div>
+
+</body>
+
 </html>

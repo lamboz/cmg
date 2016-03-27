@@ -4,7 +4,7 @@
 @include foundation-everything();
 
 $font-stack: 'Bitter', serif;
-$primary-font-color: #683816;
+$primary-font-color: #69381B;
 
 html{
   margin: 0;
@@ -23,29 +23,17 @@ a, a:visited {
 }
 
 header {
+  margin: 0 auto;
+  position: relative;
 
-  .top {
-    padding: 0 50px;
-  }
+  .social-icons {
+    background-color: #000;
 
-  #contact-methods {
-    position: absolute;
-    right: 50px;
-    top: 25px;
-  }
+    li {
+      display: inline-block;
 
-  .intro {
-    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('http://hmanalo.ca/wp-content/uploads/2014/05/soil-hermie-1580x782.jpg') no-repeat center 80%;
-    background-size: cover;
-    color: #fff;
-    height: 460px;
-    width: 100%;
-  }
-
-  .info {
-    text-align: center;
-    position: relative;
-    top: 150px;
+      a { color: #fff; }
+    }
   }
 
   nav {
@@ -69,12 +57,29 @@ header {
   }
 }
 
+#intro {
+  background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.60)), url('http://hmanalo.ca/wp-content/uploads/2014/05/soil-hermie-1580x782.jpg') no-repeat center 80%;
+  background-size: cover;
+  color: #fff;
+  height: 460px;
+  width: 100%;
+
+  .info {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+  }
+}
+
 .section{
   margin-top: 38px !important;
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -123,13 +128,12 @@ h2 { text-align: center; }
 }
 
 #copyright{
-  background: #DC980Bforema;
-  clear: both;
   color: #fff;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 0.75em;
   line-height: 3em;
   text-align: center;
+  padding: 30px 0;
 }
 
 
@@ -137,16 +141,16 @@ h2 { text-align: center; }
 /* Services */
 #service-boxes{
   margin-top: 48px;
+  padding: 30px 0 50px;
 }
 
 .service-box {
-  float: left;
-  width: 28%;
-  padding: 220px 12px 0;
+  color: #886654;
+  padding: 230px 80px 40px;
   text-align: justify;
-  margin-left: 34px;
 
   h3 {
+    color: $primary-font-color;
     margin-top: 0;
     text-align: center;
   }
@@ -154,4 +158,8 @@ h2 { text-align: center; }
 
 .soil-dynamics{
   background: url("/images/service1.png") no-repeat top center;
+}
+
+footer {
+  background-color: #DC980B;
 }
