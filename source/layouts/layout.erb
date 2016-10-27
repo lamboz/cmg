@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
   <head>
@@ -6,78 +5,27 @@
     <meta name="description" content="CMG Caracterización y Modelación Geotécnica S.A. es un empresa consultora especializada en geotecnia, fundada en 2016, con oficinas en San Ramón de Alajuela. CMG cuenta con personal altamente calificado y con amplia experiencia que permiten entregar soluciones específicas a los problemas particulares de nuestros clientes. Ofrecemos una amplia gama de servicios de geología aplicada, geotecnia y geofísica aplicada para atender de forma integral los problemas particulares de su proyecto.">
     <link rel="icon" type="image/png" href="images/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.core.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.util.keyboard.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/plugins/foundation.util.timerAndImageLoader.js"></script>
+    <script src="owl.carousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" />
+    <link rel="stylesheet" href="owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.carousel/assets/owl.theme.default.min.css">
+
     <script src="https://use.fontawesome.com/e0304448d3.js"></script>
-    <!--Start of Zopim Live Chat Script-->
-    <script type="text/javascript">
-    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-    $.src="//v2.zopim.com/?3AmWRxGqcObfIXoQFBCSsCMBGcNuLbIa";z.t=+new Date;$.
-    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-    $zopim(function() {
-      $zopim.livechat.setLanguage('es');
-    });
-    </script>
-    <!--End of Zopim Live Chat Script-->
-    <style>
-      html { width: 100%; height: 100%; min-height: 350px; }
-      body { height: 100%; width: 100%; position: relative; }
-      #wrapper {
-      	width:260px;
-      	height:65px;
-      	position:absolute;
-      	top:50%;
-      	right:50%;
-      	margin:-100px -50px;
-      	text-align:center;
-      	transition:opacity 3.5s ease;
-      	-moz-transition:opacity 3.5s ease;
-      	-webkit-transition:opacity 3.5s ease;
-      	-ms-transition:opacity 3.5s ease;
-      	-o-transition:opacity 3.5s ease;
-      }
-
-      #wrapper:hover {
-      	opacity:1;
-      }
-
-      #logo {
-        padding-bottom:5px;
-      }
-
-      a {
-      	color:#69381B;
-      	text-decoration:none;
-      	font-size:14px;
-      	font-weight:300;
-      }
-
-      #contact {
-      	width:100%;
-      	text-align:center;
-      	position:absolute;
-      	bottom:35px;
-      	font-size:14px;
-      }
-
-      a:hover {
-        color: #f33344;
-      }
-    </style>
+    <link rel="stylesheet" href="stylesheets/site.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
   </head>
 <body>
-
-  <div id="wrapper">
-    <img src="images/cmg_logo.png" alt="C.M.G"/>
-  </div>
-
-  <div id="contact">
-  	<a href="https://www.facebook.com/cmg.sa/" target="_blank"><i class="fa fa-facebook" title="Facebook"></i></a> |
-    <a href="https://twitter.com/cmg_sa" target="_blank"><i class="fa fa-twitter" title="Twitter"></i></a> |
-    <a href="mailto:info@cmg.cr" target="_blank"><i class="fa fa-envelope" title="Email"></i></a> |
-    <a href="tel:+50640337369">+506 4033 7369</a>
-  </div>
-
+  <%= partial 'header' %>
+  <%= yield %>
+  <%= partial 'footer' %>
 </body>
 
 </html>

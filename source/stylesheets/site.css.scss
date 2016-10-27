@@ -18,148 +18,146 @@ body{
   padding: 0;
 }
 
-a, a:visited {
-  text-decoration: none;
+header {
+  margin: 10px;
 }
 
-header {
-  margin: 0 auto;
-  position: relative;
-
-  .social-icons {
-    background-color: #000;
-
-    li {
-      display: inline-block;
-
-      a { color: #fff; }
-    }
-  }
-
-  nav {
-    background: rgba(255,255,255,0.5);
-    height: 58px;
-
-    ul {
-      list-style: none;
-      margin: 0;
-    }
-
-    li {
-      display: inline-block;
-      padding: 20px;
-      font-weight: 500;
-    }
-
-    a {
-      color: #fff;
-    }
-  }
+#badges .item img {
+  width: 120px;
 }
 
 #intro {
-  background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.60)), url('http://hmanalo.ca/wp-content/uploads/2014/05/soil-hermie-1580x782.jpg') no-repeat center 80%;
+  background: linear-gradient(rgba(109, 107, 106, 0.38), rgba(109, 107, 106, 0.38)), url('/images/intro2.jpg') no-repeat center 45%;
   background-size: cover;
   color: #fff;
   height: 460px;
   width: 100%;
-
-  .info {
-    margin: 0 auto;
-    max-width: 900px;
-    padding: 50px;
-    text-align: center;
-    position: relative;
-    top: 50px;
-  }
+  border-top: 1px solid #69381b;
+  border-bottom: 1px solid #acafb6;
+  display: flex;
 }
 
-.section{
-  margin-top: 38px !important;
+#intro .info {
+  align-self: center;
 }
 
-.container {
-  max-width: 1440px;
-  margin: auto;
+#intro h1 {
+  background-color: rgba(204, 59, 22, 0.5);
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 10px;
 }
 
-h2 { text-align: center; }
-
-
-#contacts {
-  color: #fff;
-  background-color: #FAC40C;
-  font-weight: bold;
-  padding: 30px 0;
-  text-align: right;
-
-  a, a:visited {
-    color: #fff;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  li {
-    display: inline;
-    margin-right: 20px;
-
-    &.social a{
-      vertical-align: sub;
-    }
-
-    a {
-      height: 24px;
-    }
-
-    &.phone a {
-      background: url('/images/phone.png') no-repeat left 50%;
-      padding-left: 32px;
-    }
-
-    &.email a {
-      background: url('/images/email.png') no-repeat left 50%;
-      padding-left: 32px;
-    }
-  }
-}
-
-#copyright{
-  color: #fff;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 0.75em;
-  line-height: 3em;
-  text-align: center;
-  padding: 30px 0;
-}
-
-
-
-/* Services */
-#service-boxes{
-  margin-top: 48px;
-  padding: 30px 0 50px;
-}
-
-.service-box {
-  color: #886654;
-  padding: 230px 80px 40px;
-  text-align: justify;
-
-  h3 {
-    color: $primary-font-color;
-    margin-top: 0;
-    text-align: center;
-  }
-}
-
-.soil-dynamics{
-  background: url("/images/service1.png") no-repeat top center;
+#intro h1:nth-of-type(2){
+  background-color: rgba(204, 59, 22, 0.75);
+  margin-top: -20px;
 }
 
 footer {
-  background-color: #DC980B;
+  background-color: Brown;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer li {
+  list-style: none;
+}
+
+section, .section {
+  padding: 26px 0;
+}
+
+section.about{
+  padding-top: 70px;
+}
+
+.tabs { border: none; }
+
+.tabs-title {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.tabs-title.is-active {
+  background-color: #fff;
+}
+
+.tabs-title.geol.is-active {
+  border-left: 8px solid #f58a22;
+}
+
+.tabs-title.geot.is-active {
+  border-left: 8px solid #ff491b;
+}
+
+.tabs-title.geof.is-active {
+  border-left: 8px solid #69381b;
+}
+
+.tabs-title > a {
+  background: none !important;
+}
+
+.tabs-content.vertical {
+  border: none;
+}
+
+#brochure-download {
+  padding: 26px 0;
+  background: linear-gradient(rgba(164, 164, 163, 0.66), rgba(164, 164, 163, 0.61)), url("http://previews.123rf.com/images/merial1/merial11205/merial1120500079/13673038-Detail-der-boxed-Kernproben-aus-Diamantkernbohrer-Lizenzfreie-Bilder.jpg");
+  background-attachment: fixed;
+}
+
+.contact-box {
+  color: #69381b;
+  font-family: 'Montserrat',sans-serif;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+a.contact-box:hover {
+  color: #f58a22;
+}
+
+.contact-box i {
+  float: left;
+  font-size: 3rem;
+}
+
+.contact-box h4 {
+  font-size: 1.12rem;
+  font-weight: bold;
+  float: right;
+  line-height: 4.25rem;
+  margin-left: 8px;
+}
+
+.about {
+  background-color: #faf6f2;
+  padding: 26px 0;
+}
+
+h3 {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  color: #333;
+  font-size: 1.875rem;
+}
+
+h2 {
+  font-family: "Passion One", cursive;
+  border-bottom: 1px solid #fbf2ea;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+h2::after {
+  position: absolute;
+  content: "";
+  background-color: #ff491b;
+  height: 3px;
+  width: 150px;
+  bottom: -1px;
+  left: 0;
 }
