@@ -3,7 +3,7 @@
 @import "foundation";
 @include foundation-everything();
 
-$font-stack: 'Bitter', serif;
+$font-stack: 'Lato', san-serif;
 $primary-font-color: #69381B;
 
 html{
@@ -99,6 +99,7 @@ section.about{
 
 .tabs-title > a {
   background: none !important;
+  font-size: 1.5rem;
 }
 
 .tabs-content.vertical {
